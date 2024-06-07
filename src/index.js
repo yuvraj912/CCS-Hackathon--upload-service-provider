@@ -10,7 +10,7 @@ console.log('MONGODB_URI:', process.env.MONGODB_URI);
 connectDB()
 .then(() =>{
     app.listen(process.env.PORT || 9000, () =>{
-        console.log(`Serevr is running at pro ${process.env.PORT}`);
+        console.log(`Server is running at port ${process.env.PORT}`);
     })
 })
 .catch((err) =>{

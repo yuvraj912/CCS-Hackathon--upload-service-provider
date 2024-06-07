@@ -1,8 +1,8 @@
 class ApiResponse {
     constructor(
         statusCode,
-        message= "Error at ApiResponse.js",
         data,
+        message= "success"
     ){
         this.statusCode = statusCode,
         super(message),
@@ -10,3 +10,5 @@ class ApiResponse {
         this.success = statusCode <400
     }
 }
+
+module.exports = ApiResponse;
