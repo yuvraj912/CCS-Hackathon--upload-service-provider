@@ -19,10 +19,5 @@ router.route("/register").post(
         registerUser
 );
 
-if (
-    [fullName, email, username, password].some((field) => field?.trim() ==="")
-) {
-    throw new ApiError(400, "All fields are required")
-}
 
 module.exports = router
